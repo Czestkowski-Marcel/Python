@@ -1,0 +1,11 @@
+list.append(x)  # Dodaje element x na końcu listy.
+list.clear()  # Usuwa wszystkie elementy z listy.
+list.copy()  # Zwraca płytką kopię listy.
+list.count(x)  # Zlicza liczbę wystąpień elementu x w liście.
+list.extend(iterable)  # Rozszerza listę, dodając elementy z iterowalnego obiektu.
+list.index(x[, start[, end]])  # Zwraca indeks pierwszego wystąpienia elementu x (rzuca ValueError, jeśli nie znaleziono).
+list.insert(i, x)  # Wstawia element x na indeks i.
+list.pop([i])  # Usuwa i zwraca element z indeksu i (domyślnie ostatni element).
+list.remove(x)  # Usuwa pierwsze wystąpienie elementu x (rzuca ValueError, jeśli nie znaleziono).
+list.reverse()  # Odwraca kolejność elementów w liście.
+list.sort(*, key=None, reverse=False)  # Sortuje elementy listy na miejscu (można użyć klucza i sortowania odwrotnego).

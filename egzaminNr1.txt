@@ -1,0 +1,32 @@
+#zad1
+#m = int(input("podaj x: "))
+#n = int(input("podaj y: "))
+#for i in range(n):
+#    for j in range(m):
+#        print("*",end=" ")
+#    print("")
+#zad2
+#n = int(input("podaj n:"))
+#for i in range(0,n):
+#    i = float(i)
+#    i+=1
+#    i*=i
+#    print(i)
+#zad5
+#def my_min(x,y,z):
+#    if x < y and x < z:
+#        return x
+#    if y < x and y < z:
+#        return y
+#    if z < x and z < y:
+#        return z
+#print("najmniejsza liczba to: ",my_min(1, 2, 3))
+#def func_3(*args):
+#    wynik = 0
+#    for arg in args:
+#        int(arg)
+#        arg**=2
+#        wynik +=arg
+#    return wynik
+#print(func_3(5,-1,7))
+#zad7

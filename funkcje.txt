@@ -1,0 +1,36 @@
+def funkcja():
+    print("kasztan")
+funkcja()
+
+def dodawanie(a,b):
+    print(a+b)
+dodawanie(2,4)
+
+def dodawanie(a,b):
+    return(a+b)
+
+#odnaleziony sens reutrna, kiedy zrobisz retuurn, możesz potem wynik funkcji przypisać do zmiennej
+zmienna = dodawanie(2,4)
+print(zmienna)
+
+
+def przypis(x):
+    return x*x
+zmienna = przypis # przypisywanie kinda nazwy funkcji do zmiennej, zobacz że teraz zamiast przypisywać do "przypis(x)"
+print(zmienna(5))# moge to teraz robić do zmienna(x)
+
+def funkcja2 (f1,x): # w python mozna wymagac podania funkcji w funkcji tego nawiasu
+    return f1(x) * x
+print( funkcja2(przypis, 3) )
+
+
+#PRZYKŁAD REKURENCJI
+
+#silnia to - "silnia 3 = 3 * 2 * 1 = 6"
+def silnia(x):
+    if x <= 1:
+        return 1
+    else:
+        return x * silnia(x-1) # <-- rekurencja tzn możliwość wywołania funkcji w funkcji
+
+print(silnia(5))

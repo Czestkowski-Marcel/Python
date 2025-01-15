@@ -1,0 +1,17 @@
+from random import randint
+
+los = randint(1,10)
+gra = False
+i=0
+while gra == False:
+    i+=1
+    guess = int(input("podaj liczbę z przedziału 1-10!\n"))
+    if guess == los:
+        print("BRAWO ZGADLES! LOS TO: ", los,"\n")
+        print("POTRZEBOWALES NA TO ",i," PROB")
+        gra = True
+    elif guess < los:
+        print("liczba ktorej szukasz jest wieksza!")
+    elif guess > los:
+        print("liczba ktorej szukasz jest mniejsza!")
+

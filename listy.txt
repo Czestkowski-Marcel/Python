@@ -1,0 +1,31 @@
+lista = ["halo", 1, 3 ,4 ,5]
+print(lista)
+print(lista[4])
+
+
+print("liczba elementów : ", len(lista[0])) # len() jest jak .length
+lista[0] = "Marcel"
+
+print(lista)
+print(lista * 3 )
+print(lista + ["23","25"])
+
+lista.append("f") # dodaje element na koncu listy
+print(lista)
+lista.append(["lol","ale dziwne"]) # lista w liscie
+print(lista)
+print(lista[6][0]) # wywolanie elementu listy w liscie
+lista.insert(0,"dodany element") # dodaje element gdzie chcesz na liscie, pierwszy znak oznacza miejsce indeksu
+#a drugi oznacza to juz co dodajesz
+print(lista)
+lista.append(1)
+print("ilość: ", lista.count(1)) # zlicza wystąpienia podanych elementów, w tym przypadku jedynki
+print(lista.index("Marcel")) # podaje index elementu w liscie
+
+lista.remove("dodany element") # usuwanie elementu
+print(lista)
+
+wyraz = "0arcel"
+print(wyraz) # nie da sie edytowac stringa w sposob ze element "0" = M
+
+print(wyraz.replace("0","M")) # zmiany mozna dokonac w ten sposob

@@ -1,0 +1,15 @@
+lista = ["hej", "wszystkim", "jestem", "Marcel"]
+#i = int(0)
+#while len(lista) > i:
+#   print(lista[i])
+#   i += 1
+# wykorzystanie while do wypisywania listy
+
+for i in lista:
+    print(i)
+print("-------------")
+for y in range(15):
+    print(y)
+print("-------------")
+for z in range(0, 15,5): # trzeci warunek dodaje możliwość robienia że np. co 5 liczba się wyświetli
+   print(z)

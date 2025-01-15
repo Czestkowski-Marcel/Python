@@ -1,0 +1,15 @@
+from idlelib.colorizer import prog_group_name_to_tag
+
+krotka = (2,4,6,8,12,14,16,18)
+print(krotka)
+print(krotka[3])
+
+print("elementów",krotka.count(2))
+print("indeks: ", krotka.index(12))
+
+print(krotka[:5]," - A") # A - wszystko od lewej do 5 indeksu
+print(krotka[::3]," - B") # B - wyswietli co 3 element zaczynajac od 0
+print(krotka[::-1]," - C") # C - wyswietli liste od konca
+print(krotka[3:6]," - D") # D - wyswietla od 3 do 6 indeksu
+print(krotka[0:5:2]," - E") # E - wyswietli co drugi element z przedzialu indeksu 0 do 5
+print(krotka[-3:-1]," - F") # F - liczy indeksy od tylu, zaczyna od -1

@@ -1,0 +1,67 @@
+abs(x)  # Zwraca wartość bezwzględną x.
+all(iterable)  # Zwraca True, jeśli wszystkie elementy w iterowalnym obiekcie są prawdziwe.
+any(iterable)  # Zwraca True, jeśli przynajmniej jeden element w iterowalnym obiekcie jest prawdziwy.
+ascii(object)  # Zwraca łańcuch reprezentujący obiekt w postaci ASCII (specjalne znaki zamienia na escape sequence).
+bin(x)  # Zwraca reprezentację binarną liczby x (w formie łańcucha).
+bool([x])  # Zwraca True, jeśli x ma wartość prawdziwą, w przeciwnym razie False.
+bytearray([source[, encoding[, errors]]])  # Tworzy obiekt bytearray z danych.
+bytes([source[, encoding[, errors]]])  # Tworzy obiekt bytes z danych.
+callable(object)  # Sprawdza, czy obiekt jest wywoływalny (np. funkcja, metoda).
+chr(i)  # Zwraca znak reprezentujący liczbę całkowitą i (ASCII lub Unicode).
+classmethod(function)  # Tworzy metodę klasową.
+compile(source, filename, mode)  # Kompiluje źródło (kod w postaci łańcucha) do obiektu kodu.
+complex([real[, imag]])  # Tworzy liczbę zespoloną (część rzeczywista + część urojona).
+delattr(object, name)  # Usuwa atrybut o nazwie name z obiektu.
+dict([iterable])  # Tworzy słownik z iterowalnego obiektu (np. listy krotek).
+dir([object])  # Zwraca listę atrybutów obiektu (lub globalne w przypadku braku obiektu).
+divmod(a, b)  # Zwraca krotkę (a // b, a % b) – iloraz i reszta.
+enumerate(iterable, start=0)  # Zwraca obiekt enumeracji: (index, element) dla każdego elementu w iterable.
+eval(expression[, globals[, locals]])  # Wykonuje wyrażenie Pythona (łącznie z kodem).
+exec(object[, globals[, locals]])  # Wykonuje dynamiczny kod Pythona (np. skrypt).
+filter(function, iterable)  # Zwraca elementy z iterable, dla których function zwraca True.
+float([x])  # Zwraca liczbę zmiennoprzecinkową (float) z argumentu x.
+format(value, format_spec)  # Formatuje wartość zgodnie z format_spec.
+frozenset([iterable])  # Tworzy niemutowalny zestaw (frozenset).
+getattr(object, name[, default])  # Zwraca wartość atrybutu obiektu lub wartość domyślną.
+globals()  # Zwraca słownik globalnych zmiennych.
+hasattr(object, name)  # Sprawdza, czy obiekt ma atrybut o nazwie name.
+hash(object)  # Zwraca wartość haszującą obiektu.
+help([object])  # Uruchamia system pomocy Pythona.
+hex(x)  # Zwraca reprezentację szesnastkową liczby x (w postaci łańcucha).
+id(object)  # Zwraca unikalny identyfikator obiektu w pamięci.
+input([prompt])  # Zwraca łańcuch wprowadzonego przez użytkownika tekstu (opcjonalnie z promptem).
+int([x[, base]])  # Zwraca liczbę całkowitą z x (opcjonalnie w systemie liczbowym o podstawie base).
+isinstance(object, classinfo)  # Sprawdza, czy obiekt jest instancją klasy (lub jednej z klas).
+issubclass(class, classinfo)  # Sprawdza, czy klasa jest pochodną klasy (lub jednej z klas).
+iter(object[, sentinel])  # Tworzy iterator z obiektu (lub funkcji).
+len(s)  # Zwraca długość (liczbę elementów) obiektu s.
+list([iterable])  # Tworzy listę z iterowalnego obiektu.
+locals()  # Zwraca słownik lokalnych zmiennych.
+map(function, iterable, ...)  # Zastosowuje funkcję do każdego elementu iterable.
+max(iterable, *[, key, default])  # Zwraca największy element w iterable (lub maksymalny z kilku elementów).
+memoryview(obj)  # Tworzy widok pamięci na obiekcie (np. bajtowym).
+min(iterable, *[, key, default])  # Zwraca najmniejszy element w iterable (lub minimalny z kilku elementów).
+next(iterator[, default])  # Zwraca następny element z iteratora, lub wartość domyślną, jeśli iterator jest wyczerpany.
+object()  # Tworzy nowy, pusty obiekt.
+oct(x)  # Zwraca reprezentację ósemkową liczby x (w postaci łańcucha).
+open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)  # Otwarcie pliku.
+ord(c)  # Zwraca kod Unicode dla znaku c.
+pow(x, y[, z])  # Zwraca x podniesione do potęgi y (opcjonalnie zmodulowane przez z).
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)  # Wypisuje obiekty na standardowe wyjście.
+property(fget=None, fset=None, fdel=None, doc=None)  # Tworzy właściwość obiektu.
+range([start], stop[, step])  # Tworzy iterowalny obiekt z zakresu liczb.
+repr(object)  # Zwraca łańcuch reprezentujący obiekt (dla debuggingu).
+reversed(seq)  # Zwraca iterator odwrócony w stosunku do sekwencji.
+round(number[, ndigits])  # Zwraca liczbę zaokrągloną do ndigits miejsc po przecinku.
+set([iterable])  # Tworzy zestaw (zbiór) z iterowalnego obiektu.
+setattr(object, name, value)  # Ustawia atrybut obiektu o nazwie name na wartość value.
+slice([start], stop[, step])  # Tworzy obiekt slice (wycinek).
+sorted(iterable, *, key=None, reverse=False)  # Zwraca posortowaną listę z elementów iterable.
+staticmethod(function)  # Tworzy statyczną metodę w klasie.
+str(object='')  # Zwraca łańcuch znaków reprezentujący obiekt.
+sum(iterable, /, start=0)  # Zwraca sumę elementów w iterable, zaczynając od start.
+super([type[, object]])  # Zwraca klasę bazową obiektu.
+tuple([iterable])  # Tworzy krotkę z iterowalnego obiektu.
+type(object)  # Zwraca typ obiektu.
+vars([object])  # Zwraca słownik atrybutów obiektu.
+zip(*iterables)  # Łączy iterowalne obiekty w krotki.

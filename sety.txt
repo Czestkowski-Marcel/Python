@@ -1,0 +1,24 @@
+#liczby1 = {0,1,2,3,4,5,6,7,8,9}
+#print(liczby1)
+#slowa = set(['a','b','c'])
+#print(slowa)
+
+
+#set jest ma unikalne elementy, tzn nie da sie miec dwa razy np. 91 w jednym zbiorze set
+
+
+#liczby1.add(91)
+#print(liczby1)
+#liczby1.remove(0)
+#print(liczby1)
+#liczby1.add(91)
+#print(liczby1)
+#print(91 in liczby1) # sprawdza czy dana wartosc jest w zbiorze
+
+liczby1 = {0,1,2,3,4,5,6,7,8,9}
+liczby2 = {3,4,5,6}
+print(liczby1)
+#print(liczby2 | liczby1) # tworzy sume z dwóch zbiorów
+#print(liczby2 & liczby1) # iloczyn zbiorów, czyli te liczby które znajdują się w obu zbiorach
+#print(liczby1 - liczby2) # odejmujemy jeden zbiór od drugiego, KOLEJNOŚĆ ma znaczenie!
+#print(liczby1 ^ liczby2) # odejmuje to co się powtarza w zbiorach

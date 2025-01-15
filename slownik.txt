@@ -1,0 +1,16 @@
+slownik = {1: "poniedzialek", 2: "wtorek", 3: "sroda",5:"piatek"}
+#print(slownik[1])
+#print(slownik[5])
+slownik[4] = "czwartek"
+slownik[8] = False
+slownik[7] = 5
+slownik['haslo'] = 'eluwina'
+#print(slownik)
+
+#for i in slownik:
+#    print(i) ## taka petla wyswietli klucze!
+#print("----------------------------------")
+#for i in slownik.values():
+#    print(i) ## taka petla wyswietli wartosci pod kluczami!
+
+#slownik.pop(indeks) usuwa element ze slownika

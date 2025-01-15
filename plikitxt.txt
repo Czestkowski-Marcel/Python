@@ -1,0 +1,13 @@
+plik = open('test.txt', 'a') # w - nadpisuje, a - dodaje, r - czyta, plik = open otwiera plik
+if plik.writable(): # to zawsze trzeba
+    plik.write(input('wprowadz tekst:')+ '\n') # wprowadza dane do pliku
+    #ile = plik.write('wprowadz tekst:')+ '\n') # zlicza ile jest znakow w pliku, pamietac o +\n które dodaje na koniec, bo to tez liczy
+plik.close()
+plik = open('test.txt', 'r')
+if plik.readable():
+    # tekst = plik.read() # czyta plik
+    tekst = plik.readlines() # tworzy liste z wszstkich linii w pliku
+    #print(tekst)
+    print('zawartosc pliku: ')
+    for l in tekst: # mozna tez od razu odwolac sie do plik
+        print(l)

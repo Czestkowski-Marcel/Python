@@ -1,0 +1,58 @@
+class wojownik:
+    def __init__(self, nazwa,zdrowie,sila,punkty_takt):
+        self.nazwa = nazwa
+        self.zdrowie = zdrowie
+        self.sila = int(sila)
+        self.punkty_takt = int(punkty_takt)
+        self.HP = zdrowie
+        self.Boost = False
+
+    def MocAtak(self):
+        moc = (self.punkty_takt * self.sila * self.zdrowie) * 0.0002 # * 0.002 - to moj balans, na egzamine usunac
+        return moc
+    def StrataHP(self,obrazenia):
+        self.zdrowie -= obrazenia
+        procentHP = (self.zdrowie / self.HP) * 100
+        if procentHP < 20 and self.Boost == False:
+            print('Zdrowie przeciwnika: ',round(procentHP,2),'%')
+            self.Boost = True
+            self.zdrowie = self.HP * 1.5
+            procentHP = (self.zdrowie / self.HP) * 100
+            print("Aktywowano boost wojownika! Zdrowie:", procentHP,'%')
+        if self.zdrowie > 0:
+            return print('Zdrowie przeciwnika: ',round(procentHP,2),'%')
+        elif self.zdrowie < 0:
+            return print("Pokonałeś przeciwnika!")
+class Lucznik:
+    def __init__(self, nazwa,zdrowie,zrecznosc,punkty_takt):
+        self.nazwa = nazwa
+        self.zdrowie = zdrowie
+        self.zrecznosc = int(zrecznosc)
+        self.punkty_takt = int(punkty_takt)
+        self.HP = zdrowie
+    def MocAtak(self):
+        moc = (self.punkty_takt * self.zrecznosc * self.zdrowie) * 0.0002 # * 0.002 - to moj balans, na egzamine usunac
+        return moc
+    def StrataHP(self,obrazenia):
+        self.zdrowie -= obrazenia
+        procentHP = (self.zdrowie / self.HP) * 100
+        if self.zdrowie > 0:
+            return print('Zdrowie przeciwnika: ',round(procentHP,2),'%')
+        elif self.zdrowie < 0:
+            return print("Pokonałeś przeciwnika!")
+Start = False
+Wybor_klasy = input("wybierz klase 'wojownik' lub 'lucznik': ")
+if Wybor_klasy == 'wojownik':
+    Start = True
+    Postac = wojownik('Lukasz', 225, 35, 15)
+    Postac2 = Lucznik('Marcel', 100, 75, 25)
+elif Wybor_klasy == 'lucznik':
+    Postac = Lucznik('Marcel', 100, 75, 25)
+    Postac2 = wojownik('Lukasz', 135, 35, 25)
+    Start = True
+if Start == True:
+    print("Kliknij przycisk 'k' zeby zaatakowac przeciwnika")
+    while Postac2.zdrowie > 0:
+        atak = input()
+        if atak == 'k':
+            Postac2.StrataHP(Postac.MocAtak())

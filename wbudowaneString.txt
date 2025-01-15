@@ -1,0 +1,47 @@
+str.capitalize()  # Zwraca łańcuch z pierwszą literą wielką, reszta mała.
+str.casefold()  # Zwraca łańcuch w małych literach, bardziej agresywne niż lower().
+str.center(width[, fillchar])  # Centruje łańcuch w polu o szerokości width, wypełniając fillchar.
+str.count(sub[, start[, end]])  # Zlicza wystąpienia podciągu sub w łańcuchu.
+str.encode(encoding='utf-8', errors='strict')  # Koduje łańcuch do bajtów w podanym kodowaniu.
+str.endswith(suffix[, start[, end]])  # Sprawdza, czy łańcuch kończy się na suffix.
+str.expandtabs(tabsize=8)  # Zastępuje tabulatory w łańcuchu odpowiednią liczbą spacji.
+str.find(sub[, start[, end]])  # Zwraca indeks pierwszego wystąpienia sub (lub -1, jeśli nie znaleziono).
+str.format(*args, **kwargs)  # Formatuje łańcuch przy użyciu {} jako znaczników.
+str.format_map(mapping)  # Podobne do format(), ale używa mapowania (np. słownika).
+str.index(sub[, start[, end]])  # Jak find(), ale rzuca wyjątek, jeśli sub nie znaleziono.
+str.isalnum()  # Sprawdza, czy wszystkie znaki są alfanumeryczne.
+str.isalpha()  # Sprawdza, czy wszystkie znaki są literami.
+str.isascii()  # Sprawdza, czy wszystkie znaki są znakami ASCII.
+str.isdecimal()  # Sprawdza, czy wszystkie znaki są cyframi dziesiętnymi.
+str.isdigit()  # Sprawdza, czy wszystkie znaki są cyframi.
+str.isidentifier()  # Sprawdza, czy łańcuch jest poprawnym identyfikatorem Pythona.
+str.islower()  # Sprawdza, czy wszystkie litery są małe.
+str.isnumeric()  # Sprawdza, czy wszystkie znaki są liczbami (np. cyframi, ułamkami).
+str.isprintable()  # Sprawdza, czy wszystkie znaki są drukowalne.
+str.isspace()  # Sprawdza, czy łańcuch zawiera tylko białe znaki.
+str.istitle()  # Sprawdza, czy łańcuch jest w tzw. Title Case.
+str.isupper()  # Sprawdza, czy wszystkie litery są wielkie.
+str.join(iterable)  # Łączy elementy iterowalnego obiektu, używając łańcucha jako separatora.
+str.ljust(width[, fillchar])  # Wyrównuje łańcuch do lewej w polu o szerokości width.
+str.lower()  # Zamienia wszystkie litery na małe.
+str.lstrip([chars])  # Usuwa białe znaki (lub znaki z chars) z lewej strony łańcucha.
+str.maketrans(x[, y[, z]])  # Tworzy tabelę tłumaczeń dla translate().
+str.partition(sep)  # Dzieli łańcuch na trzy części: przed sep, sep, po sep.
+str.removeprefix(prefix)  # Usuwa podany prefiks, jeśli występuje.
+str.removesuffix(suffix)  # Usuwa podany sufiks, jeśli występuje.
+str.replace(old, new[, count])  # Zastępuje wystąpienia old przez new (opcjonalnie max count razy).
+str.rfind(sub[, start[, end]])  # Jak find(), ale zaczyna wyszukiwać od końca.
+str.rindex(sub[, start[, end]])  # Jak index(), ale zaczyna wyszukiwać od końca.
+str.rjust(width[, fillchar])  # Wyrównuje łańcuch do prawej w polu o szerokości width.
+str.rpartition(sep)  # Jak partition(), ale dzieli od końca.
+str.rsplit(sep=None, maxsplit=-1)  # Dzieli łańcuch od prawej, maksymalnie maxsplit razy.
+str.rstrip([chars])  # Usuwa białe znaki (lub znaki z chars) z prawej strony łańcucha.
+str.split(sep=None, maxsplit=-1)  # Dzieli łańcuch według separatora sep, maksymalnie maxsplit razy.
+str.splitlines([keepends])  # Dzieli łańcuch według końców linii.
+str.startswith(prefix[, start[, end]])  # Sprawdza, czy łańcuch zaczyna się od prefix.
+str.strip([chars])  # Usuwa białe znaki (lub znaki z chars) z obu stron łańcucha.
+str.swapcase()  # Zamienia wielkość liter (małe na wielkie i odwrotnie).
+str.title()  # Zwraca łańcuch w tzw. Title Case (pierwsze litery wielkie).
+str.translate(table)  # Tłumaczy znaki według tabeli tłumaczeń.
+str.upper()  # Zamienia wszystkie litery na wielkie.
+str.zfill(width)  # Wyrównuje łańcuch do szerokości width, wypełniając zerami od lewej.

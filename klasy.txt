@@ -1,0 +1,55 @@
+class czlowiek:
+    def __init__(self, imie,wiek): # konstruktor
+        self.imie = imie
+        self.wiek = wiek
+
+    def przedstawSie(self,powitanie = 'Czesc'):
+        return powitanie + ", mam na imie " + self.imie + " lat " + str(self.wiek)
+
+    @classmethod
+    def nowy_czlowiek(cls,imie,wiek):
+        return print("siema jestem " + imie + " lat mam " + str(wiek))
+    @staticmethod
+    def przywitaj(arg):
+        print("elo " + str(arg))
+
+czlowiek.nowy_czlowiek('Seba',22)
+czlowiek.przywitaj('kamil')
+
+
+
+print("\n---------------------------------------------\n")
+
+obiekt = czlowiek('Marcel',20) # tworzenie obiektu
+print(obiekt.przedstawSie('elo'))
+
+obiekt2 = czlowiek('Lukasz',19) # tworzenie obiektu
+
+print(obiekt2.przedstawSie())
+print("\n---------------------------------------------\n")
+
+class Animal:
+    def __init__(self,name,age): # konstruktor
+        self.name = name
+        self.age = age
+
+
+class dog(Animal): # teraz dog dzidziczy konstruktor klasy animal
+    def voice(self):
+        return "hau hau"
+zwierz = dog('Argo',13)
+print(zwierz.name)
+print(zwierz.age)
+print(zwierz.voice())
+
+#dziedziczenie jest jak drzewko
+print("\n---------------------------------------------\n")
+
+class wolf(dog): # teraz wold dziedziczy animal i dog
+    def getVoice(self):
+        return "auuuuuuuuuuuu"
+wilk = wolf('szary',15)
+print(wilk.name)
+print(wilk.age)
+print(wilk.getVoice())
+print(wilk.voice())

@@ -1,0 +1,981 @@
+#zaczynam cw2.pdf
+
+#zadanie f od muranovy
+
+#a = float(input("podaj liczbę a: "))
+
+#if a >=1 and a <=10:
+ #   print("liczba należy do przedziału [1,10]")
+#elif a >=17 and a <=21:
+  #  print("liczba należy do przedziału [17,21]")
+#else:
+ #print("liczba nie należy do żadnego z przedziałów")
+
+#----------------------------------------------------------
+
+#ZADANIE G od muranovy
+
+#a = int(input("podaj liczbę a: "))
+
+#if a % 3 == 0 and a % 5 == 0:
+  #  print("liczba ta jest podzielna przez 3 i 5")
+#elif a % 3 == 0:
+  #  print("liczba ta jest podzielna tylko przez 3")
+#elif a % 5 == 0:
+   # print("liczba ta jest podzielna tylko przez 5")
+#else:
+   # print("liczba ta nie jest podzielna przez ani 3 ani 5")
+
+
+#---------------------------------------------
+#ZADANIE MURANOVY H
+
+
+#def dodawanie(a,b):
+#    return a+b
+#def mnozenie(a,b):
+#   return a*b
+#def odejmowanie(a,b):
+#    return a-b
+#def dzielenie(a,b):
+#    return float(a)/float(b)
+#wynik = 0
+#a = int(input("KALKULATOR: Podaj a: "))
+#b = int(input("KALKULATOR: Podaj b: "))
+#znak = input("KALKULATOR: Podaj znak! ")
+
+#if znak == "-":
+#    wynik = odejmowanie(a,b)
+#    print("KALKULATOR: ",wynik)
+#elif znak == "+":
+#    wynik = dodawanie(a,b)
+#    print("KALKULATOR: ",wynik)
+#elif znak == "*":
+#    wynik = mnozenie(a,b)
+#    print("KALKULATOR: ",wynik)
+#elif znak == "/":
+#    wynik = dzielenie(a,b)
+#    print("KALKULATOR: ",wynik)
+#else:
+#    print("lotasiet robisz")
+
+#--------------------------------------------------------------
+
+#ZADANIE i OD MURANOVY
+
+#def Farenheit(a):
+#    wynik = (9/5) * a + 32
+#    return wynik
+#def celcjusz(a):
+#    wynik = (a - 32) * (5/9)
+#    return wynik
+
+#wypisz = 0
+
+#liczba = float(input("podaj temperaturę: "))
+#znak = input("podaj znak F - Farenheit lub C - Celcjusz: ")
+#if znak == "f" or znak == "F":
+#    wypisz = celcjusz(liczba)
+#    print(liczba,znak, " = " ,wypisz,"C")
+#elif znak == "c" or znak == "C":
+#    wypisz = Farenheit(liczba)
+#    print(liczba,znak, " = " ,wypisz,"F")
+#else:
+#    print("lotasiet robisz")
+
+#------------------------------------------------ zaczynam cw3.pdf
+
+# PODPUNKT A
+
+#wynik = 0
+
+#for i in range(2,101,2):
+#    wynik += i
+#print(wynik)
+
+#-------------------------------------------------------
+
+#PODPUNKT B
+#i = 0
+#while True:
+#    i += 1
+#    zmienna = int(input("podaj liczbę a: "))
+#    if zmienna % 2 == 0:
+#        print("liczba jest parzysta")
+#    elif zmienna % 2 == 1:
+#        print("liczba jest nieparzysta")
+
+#    if i >= 5:
+#        break
+
+#----------------------------------------------------
+#PODPUNKT C
+
+#wynik = 0
+
+#for i in range(1,101):
+#    wynik += (i)**2
+#print(wynik)
+
+#------------------------------------------------------
+#PODPUNKT D
+
+#wynik = 0
+
+#for i in range(1,64):
+#    wynik += (2)**i
+#print(wynik)
+
+#-----------------------------------------------------
+#PODPUNKT E
+
+#a = int(input("podaj a: "))
+#b = int(input("podaj b: "))
+#wynik = 0
+#if b > a:
+#    for i in range(a,b+1):
+#        if i % 2 == 1:
+#            wynik += i
+#else:
+#    print("wynik: ",wynik)
+
+#print(wynik)
+
+#-----------------------------------
+
+#PODPUNKT F
+
+#a = int(input("podaj a: "))
+
+#for i in range(a):
+#        print(" ")
+#        for b in range(i+2):
+#            if b > 0:
+#                print(b, end=' ')
+#------------------------------------------
+
+# Next zadanie podpunkt A
+#i = 0
+#wyraz = ""
+#while True:
+ #   zmienna = input("Podaj znak: ")
+#
+#    if zmienna == "x":
+#       print("liczba pobranych znaków: ", i)
+#        print("wyraz utworzony: ",wyraz)
+#        break
+#    i+=1
+#    wyraz=wyraz+zmienna
+#-------------------------------------------
+#podpunkt C
+#i = 0
+#while True:
+#    a = int(input("podaj liczbę a: "))
+#    b = int(input("podaj liczbę b: "))
+#    c = int(input("podaj liczbę c: "))
+
+#    if a < 0 or b < 0 or c < 0:
+#        print("Podaj liczby ponownie! Wśród nich pojawiła się liczba mniejsza niż 0")
+#        continue
+#    elif a >= 0 and b >= 0 and c >=0:
+#        if a != 0 and b !=0 and c !=0:
+#            print("oto twoje liczby xD: ",a," ",b," ",c)
+#            break
+#        elif a == 0 or b == 0 or c == 0:
+#            print("oto twoje liczby xD: ",a," ",b," ",c," Wśród twoich liczb jest 0")
+#            break
+#-----------------------------------------------------------------------------------
+# podpunkt d
+#from random import randint
+
+#los = randint(1,100)
+#gra = False
+#i=0
+#while gra == False:
+#    i+=1
+#    guess = int(input("podaj liczbę z przedziału 1-10!\n"))
+#    if guess == los:
+#        print("BRAWO ZGADLES! LOS TO: ", los,"\n")
+#        print("POTRZEBOWALES NA TO ",i," PROB")
+#        gra = True
+#    elif guess < los:
+#        print("liczba ktorej szukasz jest wieksza!")
+#    elif guess > los:
+#        print("liczba ktorej szukasz jest mniejsza!")
+#-----------------------------------------------------------------------------------------
+#podpunkt E
+# limit to m z zadania
+
+
+#limit = int(input("podaj limit: "))
+#i=0
+#while True:
+#    if limit > 2:
+#        wynik = 3**i
+#        i+=1
+#        print(wynik)
+#        if wynik > limit:
+#            break
+#        else:
+#            continue
+#    else:
+#        print("limit musi być liczbą naturalną większą od 2!!")
+#        break
+#----------------------------------------------------------------------------------------
+#Podpunkt F
+#i = 0
+#while True:
+#    print(i)
+#    miesiac = int(input("Podaj numer miesiaca: "))
+#    if miesiac > 12 or miesiac < 0:
+#        i += 1
+#        if i >= 3:
+#            print("co ty kurla odjebales tutaj w tym momencie")
+#            break
+#        else:
+#            print("debilu nie ma takiego numeru miesiaca")
+#            continue
+#    elif miesiac <= 12 and miesiac > 0 and i < 3:
+#        print("brawo kurla znasz przedzial od 1 do 12 wlacznie")
+#        break
+#------------------------------------------------------------------------------------
+#PYTHON ZADANIE ADRIANA
+#i = 2
+
+#zmienna = int(input("Podaj liczbę: "))
+
+#while True:
+
+#    if zmienna % i != 0:
+#        i += 1
+#        if i > zmienna ** 0.5:
+#            print("jest pierwsza")
+#            break
+#        continue
+#    else:
+#        print("nie jest pierwsza")
+#        break
+#------ zad adriana na sterydach
+#def sprawdzacz(zmienna):
+#    i = 2
+#    while True:
+
+#        if zmienna % i != 0:
+#            i += 1
+#            if i > zmienna ** 0.5:
+#                return 1
+#            continue
+#        else:
+#            return 0
+#def main():
+#    wynik = sprawdzacz(997)
+#    if wynik == 1:
+#        print("jest pierwsza")
+#    elif wynik == 0:
+#        print("jest nie pierwsza")
+#    else:
+#        print(" nie wiem co sie stalo ")
+#main()
+#---------------------------------------------------------------------------
+#CW5.PDF
+# ZAD 1 PODPUNKT 1
+#def funkcja():
+#    wynik = 1
+#    i = 1
+#    while True:
+#        zmienna = float(input("podaj liczbę: "))
+#        Pytanie = input("Czy chcesz dodać kolejną liczbę 'tak' lub 'nie': ")
+#        wynik = wynik * zmienna
+#        if Pytanie == "nie":
+#            print("Średnia geometryczna wynosi: ",wynik**(1/i))
+#            break
+#        if Pytanie == "tak":
+#            i+=1
+#            continue
+#        else:
+#            print("debilu podaj tak lub nie")
+#            break
+#funkcja()
+#-------------------------------------------------------------------
+#ZAD 1 PODPUNKT 2
+
+#def func(*args):
+#    for i,arg in enumerate(args):
+#        print(" ")
+#        for b in range(i+1):
+#                print(args[b], end=' ')
+
+#func(3,'ala',5)
+
+#-----------------------------------------------------------------------
+#zad 1 podpunkt 3
+#def func(*args):
+#    for i,arg in enumerate(args):
+#        print(" ")
+#        for b in range(i+1):
+#                print(args[i], end=' ')
+
+#func(3,'ala',5)
+
+#--------------------------------------------------------------------------
+#zad 2 podpunkt a
+#def my_max(a, b):
+#    if a > b:
+#        return a
+#    else:
+#        return b
+#print(my_max(15,21))
+#----------------------------------------------------------------
+#zad 2 podpunkt b
+#def my_max(a,b,c):
+#    if a > b and a > c:
+#        return a
+#    elif b > a and b > c:
+#        return b
+#    elif c > a and c > b:
+#        return c
+#print(my_max(2,1, 5))
+
+#---------------------------------------
+#zad 3 + zad 5
+#rekurencja
+#def silnia(x):
+#    if x <= 1:
+#        return 1
+#    else:
+#        return x * silnia(x-1) # <-- rekurencja tzn możliwość wywołania funkcji w funkcji
+
+#print(silnia(5))
+#-------------------------------------------
+#zad 3 + zad 5
+#nierekurencja
+#def silnia(x):
+#    liczba=1
+#    for i in range(1,x+1):
+#        liczba*=i
+#    return liczba
+#print(silnia(5))
+#-------------------------------------------- cw6-7.pdf
+#zad1
+#przeanalizować żeby umieć zrobić bo wsm warto
+#def write_list(list):
+#    print(' '.join([str(item) for item in list]).center(30))
+
+#x = int(input("Podaj liczbe poziomow: "))
+#line = [1]
+#write_list(line)
+#for i in range(x - 1):
+#    next_line = [1]
+#    for j in range(len(line) - 1):
+#        next_line.append(line[j] + line[j + 1])
+#    next_line.append(1)
+#    line = next_line
+#    write_list(line)
+#--------------------------------------------------
+#zad 2
+#def kutas(zmienna):
+#    lista = []
+#    nowa_lista = [5,0]
+#    licznik = 0
+#    while zmienna > 0:
+#        i = 2
+#        while True:
+#            if zmienna % i != 0:
+#                i += 1
+#                if i > zmienna ** 0.5:
+#                    lista.append(zmienna)
+#                    licznik += 1
+#                    break
+#                continue
+#            else:
+#                break
+#        zmienna -= 1
+#        if licznik >= 2:
+#            if (int(lista[0])-2) == int(lista[1]) or (int(lista[1])-2) == int(lista[0]) :
+#                print(" ".join([str(item) for item in lista]))
+#                break
+#            else:
+#                if int(nowa_lista[1])-2 == int(lista[0]):
+#                    print(nowa_lista[1],lista[0])
+#                    break
+#                else:
+#                    nowa_lista = lista.copy()
+#                    lista.clear()
+#                    licznik = 0
+#                    continue
+#kutas(1000)
+#-----------------------------------------------------------
+#zad 4
+#def czy_doskonała(zmienna):
+#    lista = []
+#    i = zmienna
+#    wynik = 0
+#    while i > 0:
+#        i -= 1
+#        if i != 0:
+#            if zmienna % i == 0:
+#                lista.append(i)
+#    for i in range(0,len(lista)):
+#        wynik += lista[i]
+#    if wynik == zmienna:
+#        print("liczba jest doskonała")
+#    else:
+#        print("liczba nie jest doskonała")
+#czy_doskonała(int(input("podaj liczbę: ")))
+#------------------------------------------------------
+#                 cw8.pdf
+#zad 1
+
+#napis = "ABCDEFGHIJKLMNOPRSTUWYZELUWINAABCDEFGHIJKLMNOPRSTUWYZELUWINAABCDEFGHIJKLMNOPRSTUWYZELUWINAMARCELHALO"
+
+#print(len(napis))
+
+#print(napis[12],napis[7],napis[-4])
+
+#NowyWyraz = napis[12]+napis[7]+napis[-4]
+
+#print(NowyWyraz)
+
+#NowyWyraz = NowyWyraz.swapcase()
+
+#print(NowyWyraz)
+#---------------------------------
+    #ZAD 2
+#zmienna = "MarcelCzestkowski"
+    #dzielenie stringa na dwie czesci tam gdzie jest duza litera
+##for i, char in enumerate(zmienna):
+
+#    if char.isupper():
+#        pierwsza_czesc = zmienna[:i]
+#        druga_czesc = zmienna[i:]
+#print(str(pierwsza_czesc), str(druga_czesc))
+
+    #odwracam Zamieniam Marcel i Czestkowski miejscami
+#zmienna = zmienna.replace('Czestkowski','Marcel')
+#zmienna = zmienna.replace('Marcel', 'Czestkowski',1)
+
+    #odwracam spowrotem na potrzeby next zadania-----
+#zmienna = zmienna.replace('Marcel', 'Czestkowski')
+#zmienna = zmienna.replace('Czestkowski','Marcel',1)
+    #/\/\/\/\/\\\/\/\/\\/\/\/\/\\/\/\/
+
+#pierwsza_czesc = pierwsza_czesc[::-1] # napisanie stringa od tylu
+#druga_czesc = druga_czesc[::-1]# napisanie stringa od tylu
+#print(pierwsza_czesc, druga_czesc)
+    #wyswietlam inicjaly MC
+#for i, char in enumerate(zmienna):
+#    if char.isupper():
+#        print(char,end="")
+    #zamieniam miejscami Pierwsze litery imienia i nazwiska
+#zmienna = zmienna.replace('C','M')
+#zmienna = zmienna.replace('M','C',1)
+#print("\n",zmienna)
+#-----------------------------------------------------------------------
+#liczby doskonałe bez listy
+
+#def czy_doskonała(zmienna):
+#    lista = 0
+#    i = zmienna
+#    while i > 0:
+#        i -= 1
+#        if i != 0:
+#            if zmienna % i == 0:
+#                lista+=i
+#    if lista == zmienna:
+#        print("liczba jest doskonała")
+#    else:
+#        print("liczba nie jest doskonała")
+#czy_doskonała(int(input("podaj liczbę: ")))
+#-----------------------------------------------------------------------
+#liczby doskonałe Łukasza
+#def doskonała(n):
+#    i = 0
+#    zmienne = 0
+#    while i < n-1:
+#        i += 1
+#        if n % i == 0:
+#            zmienne+=i
+#    if zmienne == n:
+#        print("twoja liczba jest doskonała")
+#    else:
+#        print("wynik zmienne = ",zmienne)
+#        print("twoja liczba ",n," nie jest doskonała")
+#doskonała(35)
+#-------------------------------------------------------------------------
+#ZAD3 PODPUNKT A
+#zmienna = "MarcelCzestkowskiPiotrCzestkowskiMartaCzestkowska"
+#for i in range(len(zmienna)):
+#    i+=1
+#    if i % 2 == 0:
+#        print(zmienna[i], end=" ")
+#----------------------------------------------------------------------------
+#ZAD 3 PODPUNKT B
+#def wypisywanie(x):
+#    wynik = ""
+#    zmienna = "MarcelCzestkowskiPiotrCzestkowskiMartaCzestkowska"
+#    for i in range(-x,0):
+#        i+=1
+#        wynik += zmienna[i]
+#    return wynik
+#print(wypisywanie(int(input("Podaj liczbę znaków do wypisania: "))))
+#-----------------------------------------------------------------------------
+#zad 3 podpunkt c
+
+#def odwracacz(wyraz):
+#    wynik = ""
+#    for i in range(len(wyraz),0,-1):
+#        i-=1
+#        wynik += wyraz[i]
+#    return wynik
+#print(odwracacz(input("Podaj wyraz do odwrócenia: ")))
+#---------------------------------------------------------------------------
+#zad 3 podpunkt d
+
+#def czy_palindrom(wyraz):
+#    wynik2 = ""
+#    for i in range(0,len(wyraz)):
+#        if not wyraz[i].isspace():
+#            wynik2 += wyraz[i]
+#    wynik = ""
+#    for i in range(len(wynik2),0,-1):
+#        i-=1
+#        wynik += wynik2[i]
+#    if wynik == wynik2:
+#        print("twoje zdanie to palindrom: ",wyraz)
+#    else:
+#        print("twoje zdanie to nie palindrom: ",wyraz)
+#czy_palindrom(input("Podaj wyraz do odwrócenia: "))
+#-------------------------------------------------------------------------------
+#zad 3 podpunkt e
+
+#def zliczacz(wyraz):
+#    wynik2 = ""
+#    for i in range(0,len(wyraz)):
+#        if not wyraz[i].isspace():
+#            wynik2 += wyraz[i]
+#    print(len(wynik2))
+#zliczacz(input("podaj zdanie: "))
+#_-------------------------------------
+#zad 3 podpinkt f
+#def ileSlow(wyraz):
+#    slowo = False
+#    licznik = 0
+#    for znak in wyraz:
+#        if znak !=' ' and not slowo:
+#            licznik +=1
+#            slowo = True
+#        elif znak == ' ':
+#            slowo = False
+#    print("liczba slow: ",licznik)
+#ileSlow(input("podaj zdanie: "))
+#-----------------------------------------------------
+#def zliczacz(wyraz):
+#    wynik2 = ""
+#    for i in range(0,len(wyraz)):
+#        if not wyraz[i].isspace():
+#            wynik2 += wyraz[i]
+#    lista1 = []
+#    lista2 = []
+#    licznikS = 0
+#    licznikSP = 0
+#    for znak in wynik2:
+#        if znak == 'a' or znak=='e' or znak=='i' or znak=='o' or znak=='u' or znak=='y' or znak=='ą' or znak=='ę':
+#            lista1.append(znak)
+#            licznikS+=1
+#        else:
+#            lista2.append(znak)
+#            licznikSP+=1
+#    print(lista1)
+#    print(lista2)
+#    print("liczba samoglosek: ",licznikS, "liczba spolglosek: ",licznikSP)
+#zliczacz(input("Podaj wyraz: "))
+#---------------------------------------------------------------------
+#zad 4 podpunkt a
+#print("Mam na imie {}. Mam lat {}".format('Marcel',25))
+#-----------------------------------------------------------------
+#zad 4 podpunkt b
+#a = int(input("Podaj liczbę a: "))
+#b = int(input("Podaj liczbę b: "))
+#c = a+b
+#print("{} + {} = {}".format(a,b,c))
+#------------------------------------------------------------------------
+#zad 5
+#def funkcja(wyraz):
+#    licznik = 0
+#    licznikLiter=0
+#    uruchom = False
+#    srodek = 0
+#    for znak in wyraz:
+#        licznikLiter+=1
+#        if znak.islower() and znak == 'a' or znak == 'b':
+#            wyraz = wyraz.replace(znak, znak.upper())
+#            licznik+=1
+#    srodek = licznikLiter // 2
+#    if licznikLiter % 2 > 0 and wyraz[srodek]!=wyraz[srodek].upper() :
+#        wyraz = wyraz.replace(wyraz[srodek],wyraz[srodek].upper())
+#        uruchom = True
+#        licznik += 1
+#    print("zmieniony napis: ",wyraz)
+#    print("liczba zmian: ",licznik)
+#    if uruchom == True:
+#        print("liczba znaków jest nieparzysta więc środkowe: ",wyraz[srodek].lower()," -> ",wyraz[srodek])
+#funkcja(input("podaj napis: "))
+#----------------------------------------------------------------------------------
+#zad 6 PODPUNKT A
+#def szyfr(wyraz,przesun):
+#    szyfrogram = ''
+#    odszyfruj = ''
+#    for znak in wyraz:
+#        szyfrogram += chr(ord(znak)+przesun)
+#    print("zaszyfrowany: ", szyfrogram)
+#    for znak in szyfrogram:
+#        odszyfruj += chr(ord(znak)-przesun)
+#    print("odszyfrowany: ", odszyfruj)
+#szyfr(input("Podaj wyraz: "),2)
+#_--------------------------------------------------------------------------------
+#ZAD 6 PODPUNKT B
+#def mini_szyfrowanie(tekst):
+#    # Konwertujemy tekst na listę znaków dla łatwiejszej manipulacji
+#    znaki = list(tekst)
+#    print (znaki)
+#    # Przestawiamy znaki parami
+#    for i in range(0, len(znaki) - 1):
+#        znaki[i], znaki[i + 1] = znaki[i + 1], znaki[i]
+#    # Łączymy listę znaków z powrotem w ciąg tekstowy
+#    return ''.join(znaki)
+# Przykład użycia
+#tekst = "przyklad"
+#zaszyfrowany = mini_szyfrowanie(tekst)
+#print("Tekst oryginalny:", tekst)
+#print("Tekst zaszyfrowany:", zaszyfrowany)
+#-------------------------------------------------------------------------------------------
+#tekst = 'W Roku Pańskim 1345, władca Henryk 12, na rzecz swoich 143209 poddanych uchwalił dekret o 20 procentowej zniżce podatków'
+#liczba = 0
+#for znak in tekst:
+#    if znak.isdigit():
+#        znak = int(znak)
+#        liczba += znak
+#print("suma liczb podanych w tekscie to: ",liczba)
+#----------------------------------------------------------------------------------------------- CW10.pdf
+#ZAD 1 PODPUNKT A
+#lista = [1,"2",32,'5','61','50',35,302,9,10]
+#lista[2] = '34'
+#print(lista)
+#krotka = (1,"2",32,'5','61','50',35,302,9,10)
+#print(krotka[8])
+#for i in range(0,len(lista)):
+#    if i % 2 == 0 and i > 0:
+#        print(lista[-i],end=" ")
+#print("\n",krotka[-4:-3])
+#-----------------------------------------------------------------------------------------------
+#ZAD 1 PODPUNKT B
+#def funkcja():
+#    lista = [1,"2",32,'5','61','50',35,302,9,10]
+#    inted = []
+#    posortowana = False
+#    for i in lista:
+#        i = int(i)
+#        inted.append(i)
+    #inted.sort() #<--- jesli usunac komentarz to sie sortuje i wynik jest posortowana
+#    for j in range(len(inted)-1):
+#        if inted[j] < inted[j+1]:
+#            posortowana = True
+#            continue
+#        else:
+#            posortowana = False
+#            break
+#    if posortowana == True:
+#        return True, print(inted," posortowana")
+#    else:
+#        return False, print(inted," nieposorotwana")
+#funkcja()
+#-----------------------------------------------------------------------------------
+#zad 1 podpunkt E
+
+#def funk(list, n1,n2 ):
+#    lista = list
+#    for i in range(len(lista)):
+#        if lista[i] == n1:
+#            lista[i] = n2
+#    return print(lista)
+#funk([1,2,3,4,5,2,2,2],2,5)
+#_--------------------------------------------------------------------
+#Zad 2 podpunkt b
+#def krotszon(tuple,x):
+#    krotka = tuple
+#    nowa_krotka = krotka + (x,)
+#    for i in range(len(krotka)):
+#        if krotka[i] == x:
+#            nowik_krotka = krotka[:i] + krotka[i+1:]
+#    print("Dodany element: ",nowa_krotka)
+#    print("Usunięty element: ",nowik_krotka)
+#krotszon((1,2,3,4,5),2)
+#---------------------------------------------------------------------------------------------
+#zad 3 podpunkt a
+#lista = []
+#for i in range(0,15):
+#    lista.append(i**5)
+#print(lista)
+#-------------------------------------------------
+#zad 3 podpunkt c
+#lista = [1,]
+#e = 2
+#for i in range(0,10):
+#    lista.append(e**i)
+#print(lista)
+#--------------------------------------------------
+#zad 3 podpunkt d
+#lista = ['Czestkowski','Kowalski','Samsel','Kot','Zyra','Brzeczyszczykiewicz','Kowalska']
+#for i in lista:
+#    for j in range(0,len(i)):
+#        if j > 6:
+#            print(i)
+#            break
+#----------------------------------------------------------
+#zad 3 podpunkt e
+#def funkcja(list):
+#    for i in list:
+#        i = int(i)
+#        if i % 2 == 0:
+#            print(i**3)
+#funkcja(['1','2','3',4,7,5,8])
+#-----------------------------------------------------------
+#zad 4 PODPUNKT A
+#names = ['michal','nela','ola','przemek']
+#licznik = 0
+#for wyraz in names:
+#    for i in range(len(wyraz)):
+#        licznik+=1
+#print("sumarycznie znaków jest: ",licznik)
+#-------------------------------------------------------
+#ZAD 4 PODPUNKT B
+#names = ['michal','nela','ola','przemek']
+#nowa_lista = []
+#for wyraz in names:
+#    for i in range(len(wyraz)):
+#        if i == 0:
+#            wyraz = wyraz.replace(wyraz[i],wyraz[i].upper())
+#    nowa_lista.append(wyraz)
+#print(nowa_lista)
+#-------------------------------------------------------------------
+#zad 4 PODPUNKT C
+#names = ['michal','nela','ola','przemek']
+#nowa_lista = []
+#for wyraz in names:
+#    for i in range(len(wyraz)):
+#        if wyraz[i] == 'l':
+#            nowa_lista.append(wyraz)
+#print(nowa_lista)
+#----------------------------------------------------
+#Zad 4 podpunkt D
+#names = ['michal','nela','ola','przemek']
+#nowa_lista = []
+#for wyraz in names:
+#    for i in range(len(wyraz)):
+#        if wyraz[i] == 'a' and i == len(wyraz)-1:
+#            nowa_lista.append(wyraz)
+#print(nowa_lista)
+#------------------------------------------------------------------------------ cw11.pdf
+#ZAD 1 PODPUNKT A
+#zbior = {'Polska','Litwa','Wegry','Niemcy','Rosja'}
+#zbior.add('ukraina')
+#print(zbior)
+#print('Polska' in zbior)
+#zbior.remove('ukraina')
+#print(zbior)
+#-------------------------------------------------------------
+#ZAD 1 PODPUNKT B
+#zbior = {'Warszawa','Paryz','Berlin','Bruksela','Londyn'}
+#zbior2 = {'Warszawa','Paryz','Londyn','Budapeszt','Marsylia'}
+#print(zbior | zbior2)
+#print(zbior & zbior2)
+#print(zbior - zbior2)
+#---------------------------------------------------------------------
+#zad 2 PODPUNKT A
+#def Wypisz_numery_tel(dictionary):
+#    slownik = dictionary
+#    for i in slownik:
+#        print('(',i, ") ma numer telefonu: (", slownik[i], ")")
+#Wypisz_numery_tel({'Marcel': '781 656 844', 'Lukasz':'721 555 331', 'Pawel': '432 335 821'})
+#----------------------------------------------------------------------------
+#zad 2 PODPUNKT B
+#def wypisywacz(list):
+#    dni = {'Poniedzialek':'Monday', 'wtorek':'tuesday','sroda':'wednesday','czwartek':'thursday','piatek':'friday'}
+#    for i in list:
+#        if i in dni.keys():
+#            for c in dni.values():
+#                print(c)
+#            break
+#        elif i in dni.values():
+#            for d in dni.keys():
+#                print(d)
+#            break
+#wypisywacz(['Monday', "Tuesday", "Wednesday", "Thursday", "Friday"])
+#   #opcja 1 -  ['Poniedzialek', 'wtorek','sroda','czwartek','piatek']
+#   #opcja 2 -   ['Monday', "Tuesday", "Wednesday", "Thursday", "Friday"]
+#----------------------------------------------------------------------------------------- cw12.pdf
+#zad 1
+
+#class Account:
+#    def __init__(self,imie,nazwisko,saldo = 0):
+#        self.imie = imie
+#        self.nazwisko = nazwisko
+#        self.saldo = float(saldo)
+#    def __call__(self):
+#        return 1
+#    def Saldo(self):
+#        return print("Saldo wynosi: "+str(self.saldo))
+#    def wplata(self,suma_wplaty):
+#        wynik = self.saldo + suma_wplaty
+#        self.saldo = wynik
+#        return print("twoje saldo wynosi teraz: ", wynik)
+#    def wyplata(self,suma_wyplaty):
+#        if suma_wyplaty < self.saldo:
+#            wynik = self.saldo - suma_wyplaty
+#            self.saldo = wynik
+#            return print("Twoje saldo wynosi teraz: ",wynik)
+#        else:
+#            return print("nie masz tyle srodkow na koncie, twoje saldo wynosi: ", self.saldo)
+#
+#    def przelew(self,suma_przelewu,odbiorca):
+#        if suma_przelewu <= self.saldo and isinstance(odbiorca,Account):
+#            wynik = self.saldo - suma_przelewu
+#            self.saldo = wynik
+#            odbiorca.saldo += suma_przelewu
+#            return print("Przelano srodki: ", suma_przelewu,'[saldo:',self.saldo ,']','[odbiorca:',odbiorca.imie,odbiorca.nazwisko ,']')
+#        elif suma_przelewu <= self.saldo and not isinstance(odbiorca,Account):
+#            return print("nie podano wlasciwego odbiorcy!!")
+#        elif suma_przelewu > self.saldo and isinstance(odbiorca,Account):
+#            return print("nie masz wystarczajaco srodkow na przelew")
+#        elif suma_przelewu > self.saldo and not isinstance(odbiorca,Account):
+#            return print("nie masz wystarczajaco srodkow na przelew + podano niewlasciwego odbiorce")
+#        else:
+#            if not isinstance(odbiorca,Account):
+#                print("chuj")
+#            return print("nie wiem co sie odjebalo")
+#    def przelewZEWN(self,suma_przelewu,odbiorca):
+#        if suma_przelewu+20 <= self.saldo and isinstance(odbiorca,Account):
+#            wynik = self.saldo - (suma_przelewu+20)
+#            self.saldo = wynik
+#            odbiorca.saldo += suma_przelewu
+#            return print("Przelano srodki: ", suma_przelewu,'[saldo:',self.saldo ,']','[odbiorca:',odbiorca.imie,odbiorca.nazwisko ,']',' Dodatkowa opłata za przelew zewnetrzny wynosi 20zl !')
+#        elif suma_przelewu+20 <= self.saldo and not isinstance(odbiorca,Account):
+#            return print("nie podano wlasciwego odbiorcy!!")
+#        elif suma_przelewu+20 > self.saldo and isinstance(odbiorca,Account):
+#            return print("nie masz wystarczajaco srodkow na przelew")
+#        elif suma_przelewu+20 > self.saldo and not isinstance(odbiorca,Account):
+#            return print("nie masz wystarczajaco srodkow na przelew + podano niewlasciwego odbiorce")
+#        else:
+#            if not isinstance(odbiorca,Account):
+#                print("chuj")
+#            return print("nie wiem co sie odjebalo")
+#
+#class PrivatAccount(Account):
+#    def przelewWynagrodzenia(self,odbiorca):
+#        if isinstance(odbiorca,Account):
+#            wynagrodzenie = 3000
+#            self.saldo -= wynagrodzenie
+#            odbiorca.saldo += wynagrodzenie
+#            return print('Przelew wynagrodzenia dokonany, suma wynagrodzenia: ', wynagrodzenie)
+#
+#pierwsze_konto = Account('Marcel','Czestkowski')
+#pierwsze_konto.wplata(100)
+#drugie_konto = Account('Lukasz','Smugorzewski')
+#pierwsze_konto.przelew(80,drugie_konto)
+#drugie_konto.Saldo()
+#Szef = PrivatAccount('Wojciech','Żyra',99999)
+#Szef.przelewWynagrodzenia(drugie_konto)
+#drugie_konto.Saldo()
+#------------------------------------------------------------ cw13.pdf
+# class wojownik:
+#     def __init__(self, nazwa,zdrowie,sila,punkty_takt):
+#         self.nazwa = nazwa
+#         self.zdrowie = zdrowie
+#         self.sila = int(sila)
+#         self.punkty_takt = int(punkty_takt)
+#         self.HP = zdrowie
+#         self.Boost = False
+#
+#     def MocAtak(self):
+#         moc = (self.punkty_takt * self.sila * self.zdrowie) * 0.0002 # * 0.002 - to moj balans, na egzamine usunac
+#         return moc
+#     def StrataHP(self,obrazenia):
+#         self.zdrowie -= obrazenia
+#         procentHP = (self.zdrowie / self.HP) * 100
+#         if procentHP < 20 and self.Boost == False:
+#             print('Zdrowie przeciwnika: ',round(procentHP,2),'%')
+#             self.Boost = True
+#             self.zdrowie = self.HP * 1.5
+#             procentHP = (self.zdrowie / self.HP) * 100
+#             print("Aktywowano boost wojownika! Zdrowie:", procentHP,'%')
+#         if self.zdrowie > 0:
+#             return print('Zdrowie przeciwnika: ',round(procentHP,2),'%')
+#         elif self.zdrowie < 0:
+#             return print("Pokonałeś przeciwnika!")
+# class Lucznik:
+#     def __init__(self, nazwa,zdrowie,zrecznosc,punkty_takt):
+#         self.nazwa = nazwa
+#         self.zdrowie = zdrowie
+#         self.zrecznosc = int(zrecznosc)
+#         self.punkty_takt = int(punkty_takt)
+#         self.HP = zdrowie
+#     def MocAtak(self):
+#         moc = (self.punkty_takt * self.zrecznosc * self.zdrowie) * 0.0002 # * 0.002 - to moj balans, na egzamine usunac
+#         return moc
+#     def StrataHP(self,obrazenia):
+#         self.zdrowie -= obrazenia
+#         procentHP = (self.zdrowie / self.HP) * 100
+#         if self.zdrowie > 0:
+#             return print('Zdrowie przeciwnika: ',round(procentHP,2),'%')
+#         elif self.zdrowie < 0:
+#             return print("Pokonałeś przeciwnika!")
+# Start = False
+# Wybor_klasy = input("wybierz klase 'wojownik' lub 'lucznik': ")
+# if Wybor_klasy == 'wojownik':
+#     Start = True
+#     Postac = wojownik('Lukasz', 225, 35, 15)
+#     Postac2 = Lucznik('Marcel', 100, 75, 25)
+# elif Wybor_klasy == 'lucznik':
+#     Postac = Lucznik('Marcel', 100, 75, 25)
+#     Postac2 = wojownik('Lukasz', 135, 35, 25)
+#     Start = True
+# if Start == True:
+#     print("Kliknij przycisk 'k' zeby zaatakowac przeciwnika")
+#     while Postac2.zdrowie > 0:
+#         atak = input()
+#         if atak == 'k':
+#             Postac2.StrataHP(Postac.MocAtak())
+#-------------------------------------------------------------------------------------
+#zad 2 podpnkt a
+#plik1 = open('parz.txt', 'w')
+#plik2 = open('nieparz.txt','w')
+#if plik1.writable and plik2.writable:
+#    for i in range(-100,100):
+#        if i % 2 == 0:
+#            plik1.write(str(i) + '\n')
+#        elif i % 2 <= 1:
+#            plik2.write(str(i) + '\n')
+#plik1.close()
+#plik2.close()
+#------------------------------------------------------------------------------
+#zad 2 podpunkt b
+#plik1 = open('parz.txt', 'r')
+#plik2 = open('nieparz.txt','r')
+#wynik1 = 0
+#wynik2 = 0
+#srednia1 = 0
+#srednia2 = 0
+#licznik1=0
+#licznik2=0
+#for i in plik1:
+#    i = int(i)
+#    wynik1+=i
+#    licznik1+=1
+#srednia1 = wynik1/licznik1
+#for j in plik2:
+#    j = int(j)
+#    wynik2+=j
+#    licznik2+=1
+#srednia2 = wynik2/licznik2
+#print(wynik1,srednia1)
+#print(wynik2,srednia2)
