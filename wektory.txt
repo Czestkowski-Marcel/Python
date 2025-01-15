@@ -1,0 +1,27 @@
+class Vector:
+    def __init__(self, wektor):
+        self.wektor = wektor
+
+    def __add__(self, other):
+        if len(self.wektor) != len(other.wektor):
+            raise ValueError("Wektory muszą mieć taką samą długość.")
+        else:
+            return Vector([x + y for x, y in zip(self.wektor, other.wektor)])
+
+    def __sub__(self, other):
+        if len(self.wektor) != len(other.wektor):
+            raise ValueError("Wektory muszą mieć taką samą długość.")
+        else:
+            return Vector([x - y for x, y in zip(self.wektor, other.wektor)])
+
+    def __mul__(self, liczba):
+        return Vector([x * liczba for x in self.wektor])
+
+    def __str__(self):
+        return f"Vector({self.wektor})"
+
+v1 = Vector([1, 2, 3])
+v2 = Vector([4, 5, 6])
+print(v1 + v2)  
+print(v1 - v2)
+print(v1 * 2)
