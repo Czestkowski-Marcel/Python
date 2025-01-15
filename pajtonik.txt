@@ -1,0 +1,64 @@
+#zad 3 podpunkt a
+#lista = []
+#for i in range(0,15):
+#    lista.append(i**5)
+#print(lista)
+#-------------------------------------------------
+#zad 3 podpunkt c
+#lista = [1,]
+#e = 2
+#for i in range(0,10):
+#    lista.append(e**i)
+#print(lista)
+#--------------------------------------------------
+#zad 3 podpunkt d
+#lista = ['Czestkowski','Kowalski','Samsel','Kot','Zyra','Brzeczyszczykiewicz','Kowalska']
+#for i in lista:
+#    for j in range(0,len(i)):
+#        if j > 6:
+#            print(i)
+#            break
+#----------------------------------------------------------
+#zad 3 podpunkt e
+#def funkcja(list):
+#    for i in list:
+#        i = int(i)
+#        if i % 2 == 0:
+#            print(i**3)
+#funkcja(['1','2','3',4,7,5,8])
+#-----------------------------------------------------------
+#zad 4 PODPUNKT A
+#names = ['michal','nela','ola','przemek']
+#licznik = 0
+#for wyraz in names:
+#    for i in range(len(wyraz)):
+#        licznik+=1
+#print("sumarycznie znaków jest: ",licznik)
+#-------------------------------------------------------
+#ZAD 4 PODPUNKT B
+#names = ['michal','nela','ola','przemek']
+#nowa_lista = []
+#for wyraz in names:
+#    for i in range(len(wyraz)):
+#        if i == 0:
+#            wyraz = wyraz.replace(wyraz[i],wyraz[i].upper())
+#    nowa_lista.append(wyraz)
+#print(nowa_lista)
+#-------------------------------------------------------------------
+#zad 4 PODPUNKT C
+#names = ['michal','nela','ola','przemek']
+#nowa_lista = []
+#for wyraz in names:
+#    for i in range(len(wyraz)):
+#        if wyraz[i] == 'l':
+#            nowa_lista.append(wyraz)
+#print(nowa_lista)
+#----------------------------------------------------
+#Zad 4 podpunkt D
+#names = ['michal','nela','ola','przemek']
+#nowa_lista = []
+#for wyraz in names:
+#    for i in range(len(wyraz)):
+#        if wyraz[i] == 'a' and i == len(wyraz)-1:
+#            nowa_lista.append(wyraz)
+#print(nowa_lista)
