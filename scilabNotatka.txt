@@ -1,0 +1,41 @@
+// x = 0:90 // kinda petla for, od 0 do 91
+// x = 0:0.1:90 // kinda petla for, od 0 do 91 i kazda iteracja zwieksza sie o 0.1
+// y = sin(x)
+// disp(y) // wypisze na konsoli disp()
+// plot(y) // narysuje graficznie rownanie()
+
+////////////////////////////////////////////////////////////////////////////////
+/*
+function plotsin(v)
+    x = 0:0.01:2*%pi
+    y = sin(2*%pi*v*x)
+    plot(x,y)
+    title('sin plot of freq'+string(v)+")
+    endfunction */ // wywolanie funkcji 'nazwa(v)'
+///////////////////////////////////////////////////////////////////////////////////
+// w grafie edytuj -> wlasciwosci osi i mozna edytowac
+
+function sinplot2(inital,final,N,v1,v2,v3)
+    x1 = linspace(inital,final,N)
+    x2 = linspace(inital,final,N)
+    x3 = linspace(inital,final,N)
+    y1 = sin(2*%pi*v1*x1)
+    y2 = sin(2*%pi*v2*x2)
+    y3 = sin(2*%pi*v3*x3)
+    subplot(2,3,1)
+    plot(x1,y1,'O-r')
+    xlabel("x-axis(sample Points "+string(N)+")")
+    ylabel("f(x)=sinx")
+    title("sin Plot for different Frequencies")
+    subplot(2,3,2)
+    plot(x2,y2,'x-b')
+    xlabel("x-axis(sample Points "+string(N)+")")
+    ylabel("f(x)=sinx")
+    title("sin Plot for different Frequencies")
+    subplot(2,3,3)
+    plot(x3,y3,'*-g')
+    xlabel("x-axis(sample Points "+string(N)+")")
+    ylabel("f(x)=sinx")
+    title("sin Plot for different Frequencies")
+   // legend(["frequency="+string(v1)+""],["frequency="+string(v2)+""],["frequency="+string(v3)+""],pos=5) // dodaje legende
+    endfunction
